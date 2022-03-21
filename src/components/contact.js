@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import Map from './map'
 import "./page.css"
 
 export default class Contact extends Component {
@@ -12,6 +13,7 @@ export default class Contact extends Component {
       <div>
           <Container>
               <ContactInfo data={this.state.data}/>
+              <Map />
           </Container>
       </div>
     )

@@ -1,0 +1,23 @@
+div{
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+.card{
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white !important;
+    color: rgb(16, 27, 96) !important;
+}
+
+span{
+    display: block;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(16, 27, 96) !important;
+}
+
+.btn{
+    background-color: rgb(16, 27, 96) !important;
+    border-color: rgb(16, 27, 96) !important;
+}

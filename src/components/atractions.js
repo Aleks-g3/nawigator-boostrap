@@ -14,15 +14,19 @@ export default class Atractions extends Component {
     }
   render() {    
     return (
-        <div>
+        <div className='atractions'>
         <Container>
-          <Row className="justify-content-md-center">
+          <Row className="justify-content-center">
             <CardsOfAtraction items={this.state.data}/>
         </Row>
         </Container>
         </div>
     )
   }
+}
+
+const openLink = (link) =>{
+  window.open(link)
 }
 
 const CardsOfAtraction=(props)=>{
@@ -33,7 +37,7 @@ const CardsOfAtraction=(props)=>{
             <Card.Img variant='top' src={item.image}/>
             <Card.Body>
               <Card.Title>{item.title}</Card.Title>
-              <Button href={item.link}>Dowiedz się więcej</Button>
+              <Button onClick={() => openLink(item.link)}>Dowiedz się więcej</Button>
             </Card.Body>
             </Card>
           </Col>

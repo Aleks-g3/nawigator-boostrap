@@ -19,7 +19,9 @@ export default class Map extends Component {
       />
       <Marker position={position}>
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+        {this.props.info.map(i=>(
+           !i.startsWith("kom") ? <span>{i} <br/></span> : null
+        ))}
         </Popup>
       </Marker>
     </MapContainer>

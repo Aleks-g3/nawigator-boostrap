@@ -3,20 +3,22 @@
     font-family: 'Times New Roman', Times, serif;
     background-color: white !important;
     color: rgb(16, 27, 96) !important;
+    
 }
 
-.nav-link:hover{
+.active,.nav-link:hover{
     background-color: rgb(16, 27, 96) !important;
     color: white !important;
 }
 
-.home-img{
+.nav-link img{
     height: 21px;
     filter: invert(7%) sepia(40%) saturate(5967%) hue-rotate(231deg) brightness(114%) contrast(102%);
 }
 
-.home-img:hover{
+.nav-link img:hover, .nav-link.active > img{
     height: 21px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(250deg) brightness(102%) contrast(104%);
 }
+
   

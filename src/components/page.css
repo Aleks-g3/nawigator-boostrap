@@ -1,6 +1,27 @@
-div{
-    margin-left: 10px;
-    padding-bottom: 10px;
+@media (max-width:801px) {
+    div{
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    
+    .atractions{
+        margin-left: 15%;
+        margin-right: 50%;
+    }
+
+    .col-md-3{
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+    
+}
+
+@media (min-width:801px) {
+    div{
+        margin-left: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 .card{
@@ -21,3 +42,5 @@ span{
     background-color: rgb(16, 27, 96) !important;
     border-color: rgb(16, 27, 96) !important;
 }
+
+

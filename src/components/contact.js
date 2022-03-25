@@ -5,7 +5,7 @@ import "./page.css"
 
 export default class Contact extends Component {
   state={
-    data:["D.W. Nawigator","Nowa 70","80-105 Ostrowo","kom. 506-211-876"]
+    data:["D.W. Nawigator","ul. Nowa 70","80-105 Ostrowo","kom. 506-211-876"]
   }
   render() {
 
@@ -13,7 +13,7 @@ export default class Contact extends Component {
       <div>
           <Container>
               <ContactInfo data={this.state.data}/>
-              <Map />
+                      <Map info={this.state.data}/>
           </Container>
       </div>
     )
@@ -24,7 +24,7 @@ const ContactInfo =(props) =>{
   return(
     props.data.map(d=>(
       <Row className="justify-content-md-center">
-      <Col md={{span:3}}>
+      <Col md={{span:4}}>
           <span>{d}</span>
       </Col>
   </Row>

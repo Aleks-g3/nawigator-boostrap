@@ -5,9 +5,6 @@ import MyGallery from './myGallery';
 import "./page.css"
 
 
-
-
-
 export default class Gallery extends Component {
      state={
        tabs:[{key:'rooms',title:'Pokoje',photos:Images.ROOMS},
@@ -16,14 +13,11 @@ export default class Gallery extends Component {
        {key:'surroundings',title:'Otoczenie',photos:Images.SURROUNDINGS}]
      }
 
-    
-
-  render() {
-    
+  render() {    
     return (
       <div>
         <Container>
-          <Row className='justify-content-md-center'>
+          <Row className='justify-content-center'>
             <Col>
             <CustomTabs tabs={this.state.tabs}/>
             </Col>
@@ -35,11 +29,10 @@ export default class Gallery extends Component {
 }
 
 const CustomTabs=(props)=>{
-  debugger
   return(
     <Tabs defaultActiveKey="rooms" fill>
       {props.tabs.map(tab=>(
-        <Tab eventKey={tab.key} title={tab.title}>
+        <Tab eventKey={tab.key} title={tab.title} fill>
         <MyGallery  photos={tab.photos}/>
       </Tab>
       ))}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container} from "react-bootstrap";
 import logo from "../logo.jpg"
 import main from "../Home-icon.svg.png"
 import "./navbarComp.css"
@@ -39,8 +39,5 @@ export default class NavbarComp extends Component {
                     </Container>
             </Navbar>
             </div>
-    )
-    }
-        
-    
+    )}
 }

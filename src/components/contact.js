@@ -1,19 +1,17 @@
 import React, { Component } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import Config from '../config/config'
 import Map from './map'
 import "./page.css"
 
 export default class Contact extends Component {
-  state={
-    data:["D.W. Nawigator","ul. Nowa 70","80-105 Ostrowo","kom. 506-211-876"]
-  }
   render() {
 
     return (
       <div>
           <Container>
-              <ContactInfo data={this.state.data}/>
-                      <Map info={this.state.data}/>
+              <ContactInfo contact={Config.CONTACT}/>
+                      <Map info={Config.CONTACT}/>
           </Container>
       </div>
     )
@@ -22,10 +20,10 @@ export default class Contact extends Component {
 
 const ContactInfo =(props) =>{
   return(
-    props.data.map(d=>(
+    props.contact.map(contactInfo=>(
       <Row className="justify-content-md-center">
       <Col md={{span:4}}>
-          <span>{d}</span>
+          <span>{contactInfo}</span>
       </Col>
   </Row>
   ))

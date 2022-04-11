@@ -6,6 +6,7 @@ import About from "./components/about";
 import Contact from "./components/contact";
 import Atractions from "./components/atractions";
 import Gallery from "./components/gallery";
+import Footer from './components/footer';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                        <Route path="/atrakcje" element={<Atractions/>}/>
                    </Routes>
       </Router>
+      <Footer/>
     </div>
   );
 }
